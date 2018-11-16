@@ -1,1 +1,6 @@
-= @document
+span#markdown-content
+
+javascript:
+  var markdownParser = new showdown.Converter();
+  var parsedContent = markdownParser.makeHtml("#{@document.content}");
+  $("#markdown-content").html(parsedContent);
