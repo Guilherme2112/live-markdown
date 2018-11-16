@@ -1,5 +1,9 @@
-span#markdown-content
-
+.row
+  span#markdown-content
+hr
+.row
+  = simple_form_for @document do |f|
+    = f.input_field :content
 javascript:
   var base = '#{@document.content}'.replace(/(\r\n|\n|\r)/gm," ");
   var parsedContent = markdownit().render(base);
