@@ -14,4 +14,5 @@
 //= require rails-ujs
 //= require activestorage
 //= require markdown-it.min
+//= require materialize-sprockets
 //= require_tree .
