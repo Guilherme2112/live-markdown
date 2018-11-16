@@ -13,5 +13,5 @@
 //= require jquery
 //= require rails-ujs
 //= require activestorage
-//= require showdown.min
+//= require markdown-it.min
 //= require_tree .

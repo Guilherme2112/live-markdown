@@ -1,6 +1,6 @@
 span#markdown-content
 
 javascript:
-  var markdownParser = new showdown.Converter();
-  var parsedContent = markdownParser.makeHtml("#{@document.content}");
+  var base = '#{@document.content}'.replace(/(\r\n|\n|\r)/gm," ");
+  var parsedContent = markdownit().render(base);
   $("#markdown-content").html(parsedContent);
