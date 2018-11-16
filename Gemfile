@@ -22,6 +22,13 @@ gem 'coffee-rails', '~> 4.2'
 # Jquery
 gem 'jquery-rails'
 
+# Materialize
+gem 'materialize-sass'
+gem 'material_icons'
+
+# Simple form
+gem 'simple_form'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
