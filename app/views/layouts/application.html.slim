@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title LiveMarkdown
+
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    link [rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.css"]
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+
+
+    = action_cable_meta_tag
+
+  body
+    = yield
+
