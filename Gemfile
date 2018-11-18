@@ -22,10 +22,6 @@ gem 'coffee-rails', '~> 4.2'
 # Jquery
 gem 'jquery-rails'
 
-# Materialize
-gem 'materialize-sass'
-gem 'material_icons'
-
 # Simple form
 gem 'simple_form'
 
