@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   resources :documents, only: %i[new index show] do
     put :upsert, on: :member
   end
+
+  mount ActionCable.server => '/cable'
 end
+
