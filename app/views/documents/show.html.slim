@@ -1,0 +1,21 @@
+.row
+  span#markdown-content.markdown-body
+hr
+.row
+  = simple_form_for @document do |f|
+    = f.input_field :content, class: 'js-document-content', data: { 'document-id' => @document.id }
+
+javascript:
+  var base = '#{@document.content}'.replace(/(\r\n|\n|\r)/gm," ");
+  refreshParsedContent(base)
+
+  $('.js-document-content').change(function() {
+    App.documents.edit($(this).val());
+  });
+
+  function refreshParsedContent(new_content) {
+    var parsedContent = markdownit().render(new_content);
+    $("#markdown-content").html(parsedContent);
+  }
+
+
